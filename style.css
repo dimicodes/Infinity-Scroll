@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Bebas Neue, san-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+/*  Loader  */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Container */
+.image-container {
+  margin: 10px 20%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+
+/* Search Bar */
+.search-container {
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  }
+/*   
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #000000;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #000000;
+  background: #000000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+}

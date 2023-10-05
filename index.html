@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Scroll</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Title -->
+    <h1>Unsplash API</h1>
+    <h2>Infinity Scroll</h2>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="search"
+        class="searchTerm"
+        placeholder="What are you looking for?"
+      />
+      <button type="submit" class="searchButton" id="search-button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+      <img src="loader.svg" alt="Loading" />
+    </div>
+
+    <!-- Image Container -->
+    <div class="image-container" id="image-container"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
